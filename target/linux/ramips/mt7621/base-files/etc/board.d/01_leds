@@ -129,6 +129,10 @@ zte,e8820s)
 	ucidef_set_led_netdev "wlan2g" "WiFi 2.4GHz" "white:wlan2g" "ra0"
 	ucidef_set_led_netdev "wlan5g" "WiFi 5GHz" "white:wlan5g" "rai0"
 	;;
+hitosea,wr1800k-ax-nand)
+	ucidef_set_led_netdev "wan" "wan" "ether:blue" "wan" "link"
+	ucidef_set_led_netdev "wifi2g" "Wifi 2.4G" "wlan:green" "wlan0" "link"
+	;;
 esac
 
 board_config_flush
